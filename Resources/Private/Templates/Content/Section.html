@@ -1,0 +1,65 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+  <f:layout name="Content" />
+  <f:section name="Configuration">
+    <flux:form id="sliderhome" label="Section" description="Section" icon="" options="{Fluidcontent: {sorting: 100},group: 'Custom elements'}">
+      <flux:form.sheet name="options" label="Options">
+        <flux:form.section name="sliders" label="Home Page Slider">
+          <flux:form.object name="slider" label="Add New Slide">
+            <flux:field.file name="picture" uploadFolder="uploads/slider_images/" label="Upload Image" allowed="jpg, jpeg, png, gif"/>
+            <flux:field.input name="title" label="Title" />
+            <flux:field.input name="subtitle" label="Sub Title" />
+            <flux:field.input name="link" label="Link">
+              <flux:wizard.link />
+            </flux:field.input>
+            <flux:field.checkbox name="target" label="External Link" />
+          </flux:form.object>
+        </flux:form.section>
+      </flux:form.sheet>
+    </flux:form>
+  </f:section>
+  <f:section name="Main"> 
+    
+    <!--  slider section - 02 being  -->
+    <section>
+      <h2 style="display:none;">Section lacks heading</h2>
+      <div class="container">
+        <div class="row">
+          <div class="content">
+            <div class="col-md-7 col-sm-9 project-slideshow pull-right">
+              <div class="row"> 
+                <!--  carousel slide being  -->
+                <div id="carousel-02" class="carousel slide carousel-fade" data-ride="carousel"> 
+                  <!-- Carousel items -->
+  <div class="carousel-inner col-lg-offset-1">
+	<div class="active item">
+	<a class="switchImage" data-target="uploads/slider_images/{slide1.slider1.picture1}">
+	<img src="typo3conf/ext/dv_template/Resources/Public/images/zettel_erde.png" alt="" title=""></div>
+	<div class="item">
+	<img src="typo3conf/ext/dv_template/Resources/Public/images/zettel_feuer.png" alt="" title=""></div>
+	<div class="item">
+	<img src="typo3conf/ext/dv_template/Resources/Public/images/zettel_koenig.png" alt="" title=""></div>
+	<div class="item">
+	<img src="typo3conf/ext/dv_template/Resources/Public/images/zettel_krieger.png" alt="" title=""></div>
+	<div class="item">
+	<img src="typo3conf/ext/dv_template/Resources/Public/images/zettel_liebhaber.png" alt="" title=""></div>
+	<div class="item">
+	<img src="typo3conf/ext/dv_template/Resources/Public/images/zettel_luft.png" alt="" title=""></div>
+	<div class="item">
+	<img src="typo3conf/ext/dv_template/Resources/Public/images/zettel_magier.png" alt="" title=""></div>
+	<div class="item">
+	<img src="typo3conf/ext/dv_template/Resources/Public/images/zettel_wasser.png" alt="" title=""></div>
+  </div>
+                </div>
+                <!--  carousel slide end  --> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  slider section - 02 end  --> 
+  </f:section>
+</div>

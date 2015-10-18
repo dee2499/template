@@ -1,0 +1,31 @@
+########## Header css ######
+
+page.headerData.1 = TEXT
+page.headerData.1.value(
+	
+	
+	<!--  Bootstrap min CSS  -->
+	<link rel="stylesheet" href="{$filepaths.css}bootstrap.min.css" />
+	
+	<!--  Main CSS  -->
+	<link rel="stylesheet" href="{$filepaths.css}main.css" />
+	
+	<!--  Responsive CSS  -->
+	<link rel="stylesheet" href="{$filepaths.css}responsive.css" />
+	
+
+)
+
+########## Footer css ######
+
+page.footerData.1 = TEXT
+page.footerData.1.value(
+<!--  jquery.js  -->
+		<script src="{$filepaths.js}jquery.js"></script>
+		
+		<!--  bootstrap.min.js  -->
+		<script src="{$filepaths.js}bootstrap.min.js"></script>
+		<script src="{$filepaths.js}custom.js"></script>
+		
+)
+

@@ -1,0 +1,29 @@
+###
+# The ROOT template. 
+#
+# This template will be called by the "typo3guru" template recored in the root page. It reads the root templates for every part, like page, menu, systemConfiguration and # extensionConfiguration.
+###
+
+# Include Page Template
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:dv_template/Configuration/TypoScript/fluid.txt">
+
+# Include Config Template
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:dv_template/Configuration/TypoScript/config.txt">
+
+# Include css and javascripts Template
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:dv_template/Configuration/TypoScript/includeHeaderFooterData.txt">
+
+# Include Menu Template
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:dv_template/Configuration/TypoScript/menu.txt">
+
+# Include Extension Template
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:dv_template/Configuration/TypoScript/extensions.txt">
+
+# Include Blocks Template
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:dv_template/Configuration/TypoScript/content.txt">
+
+# Include System Template
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:dv_template/Configuration/TypoScript/system.txt">
+
+# Include Header-Data Template
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:dv_template/Configuration/TypoScript/header.txt">

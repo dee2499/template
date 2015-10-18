@@ -1,0 +1,91 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+	<f:section name="Header">
+	<header>
+		<div class="container position-relative">
+				<div class="row">
+					<!--  Logo being  -->
+					<h1 class="logo"><a class="navbar-brand" href="index.html"><f:cObject typoscriptObjectPath="lib.centerlogo"/></a></h1>
+					<!--  Logo end  -->
+					<!--  Top image being  -->
+					<div class="maenner-project-logo col-xs-12">
+						<div class="row"><f:cObject typoscriptObjectPath="lib.headerform"/></div>
+					</div>
+					<!--  Top image End  -->
+					<!--  Bootstrap navigation being  -->
+					<nav class="navbar navbar-default">
+						<!--  navbar-toggle being  -->
+						<div class="pull-left navbar-btn">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Menu</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!--  navbar-toggle end  -->
+						<div class="navbar-collapse collapse">
+							<!--  navigation left part being  -->
+							<ul class="nav navbar-nav pull-left">
+								<li><a href="index.html">start</a></li>
+								<!--  navigation dropdown being  -->
+								<li class="dropdown">
+									<a href="projekt.html">Projekt</a>
+									<span class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"><span></span></span>
+									<!--  dropdown-menu being  -->
+									<ul class="dropdown-menu">
+										<li><a href="#">Einleitung</a></li>
+										<li><a href="#">Inhalt</a></li>
+										<li><a href="#">Methoden</a></li>
+									</ul>
+									<!--  dropdown-menu end  -->
+								</li>
+								<!--  navigation dropdown end  -->
+								<li><a href="leitung.html">Leitung</a></li>
+								<li><a href="termine-und-kosten.html">Termine &amp; Kosten</a></li>
+							</ul>
+							<!--  navigation left part end  -->
+							<!--  navigation right part being  -->
+							<ul class="nav navbar-nav pull-right">
+								<li><a href="schwitzhuette.html">Schwitzhütte</a></li>
+								<li><a href="visionssuche.html">Visionssuche</a></li>
+								<li><a href="kontakt.html">Kontakt</a></li>
+							</ul>
+							<!--  navigation right part end  -->
+						</div>
+					</nav>
+					<!--  Bootstrap navigation end  -->
+				</div>
+			</div>
+		</header>	
+	</f:section>
+
+	<f:section name="Footer">
+	<footer>
+			<div class="container">
+				<div class="row">
+					<!--  footer background being  -->
+					<div class="footer-bg">
+						<!--  footer content being  -->
+						<div class="footer-content">
+							<!--  footer navigation being  -->
+							<ul class="footer-nav">
+								<li><a href="#">Datenschutz &amp; Rechtliche Hinweise</a></li>
+								<li><a href="impressum.html">Impressum</a></li>
+								<li><a href="#">Danke</a></li>
+							</ul>
+							<!--  footer navigation end  -->
+							<p>&copy; 2012 Sebastian Jung</p>
+						</div>
+						<!--  footer content end  -->
+					</div>
+					<!--  footer background end  -->
+				</div>
+			</div>
+		</footer>
+	</f:section>
+
+</div>

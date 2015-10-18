@@ -1,0 +1,62 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+  <f:layout name="Content" />
+  <f:section name="Configuration">
+    <flux:form id="sliderhome" label="Home slider" description="Home Slider Element" icon="" options="{Fluidcontent: {sorting: 100},group: 'Custom elements'}">
+      <flux:form.sheet name="options" label="Options">
+        <flux:form.section name="sliders" label="FixTop Slider">
+          <flux:form.object name="slider" label="Add New Slide">
+            <flux:field.file name="picture" uploadFolder="uploads/slider_images/" label="Upload Image" allowed="jpg, jpeg, png, gif"/>
+          </flux:form.object>
+        </flux:form.section>
+        <flux:form.section name="sliders1" label="FixBottom Slider">
+          <flux:form.object name="slider1" label="Add New Slide">
+            <flux:field.file name="picture1" uploadFolder="uploads/slider_images/" label="Upload Image" allowed="jpg, jpeg, png, gif"/>
+          </flux:form.object>
+        </flux:form.section>
+      </flux:form.sheet>
+    </flux:form>
+  </f:section>
+  <f:section name="Main"> 
+    
+    <!--  slider section being  -->
+    <section>
+      <h2 style="display:none;">Section lacks heading</h2>
+      <div class="container">
+        <div class="row"> 
+          <!--  Slider being  -->
+          <div class="slider"> 
+            <!--  fixTop for top part being  -->
+            <div class="fixTop">
+              <f:if condition="{sliders}">
+                <f:for each="{sliders}" as="slide" iteration="iteration"> <a class="switchImage" data-target="uploads/slider_images/{slide.slider.picture}"  >
+                  <f:if condition='{iteration.index} == {iteration.index}'>Slide-0{iteration.cycle}</f:if>
+                  </a> </f:for>
+              </f:if>
+            </div>
+            <!--  fixTop end  --> 
+            <!--  showfullimage for slider being  --> 
+            <img id="showfullimage" alt="" src="/pr257/uploads/slider_images/slide-11.gif"> 
+            <!--  showfullimage end  --> 
+            <!--  fixBottom for bottom part being  -->
+            <div class="fixBottom">
+              <f:if condition="{sliders1}">
+                <f:for each="{sliders1}" as="slide1" iteration="iteration1"> <a class="switchImage" data-target="uploads/slider_images/{slide1.slider1.picture1}">
+                  <f:if condition='{iteration.index} == {iteration.index}'>Slide-0
+                    <v:math.sum a="{iteration1.cycle}" b="4" />
+                  </f:if>
+                  </a> </f:for>
+              </f:if>
+            </div>
+            <!--  fixBottom end  --> 
+          </div>
+          <!--  Slider end  --> 
+        </div>
+      </div>
+    </section>
+    <!--  slider section end  --> 
+    
+  </f:section>
+</div>
